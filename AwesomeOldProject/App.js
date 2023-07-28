@@ -3,6 +3,7 @@
  * https://github.com/facebook/react-native
  *
  * @format
+ * @flow strict-local
  */
 
 import React from 'react';
@@ -18,7 +19,7 @@ import {Colors, Header} from 'react-native/Libraries/NewAppScreen';
 
 import {TestCreateReactNativeLibraryView} from 'test-create-react-native-library';
 
-function App(): JSX.Element {
+const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -27,10 +28,7 @@ function App(): JSX.Element {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
+      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
@@ -39,7 +37,7 @@ function App(): JSX.Element {
       </ScrollView>
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   testView: {
