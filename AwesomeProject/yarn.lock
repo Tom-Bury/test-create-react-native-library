@@ -5974,6 +5974,10 @@ terser@^5.15.0:
     commander "^2.20.0"
     source-map-support "~0.5.20"
 
+test-create-react-native-library@./test-create-react-native-library-v0.1.0.tgz:
+  version "0.1.0"
+  resolved "./test-create-react-native-library-v0.1.0.tgz#77eee50d7f3da86ed46c04540ab7a797f340a71e"
+
 test-exclude@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/test-exclude/-/test-exclude-6.0.0.tgz#04a8698661d805ea6fa293b6cb9e63ac044ef15e"
